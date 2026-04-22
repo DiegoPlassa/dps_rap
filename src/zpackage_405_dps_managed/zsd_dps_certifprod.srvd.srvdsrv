@@ -1,0 +1,5 @@
+@EndUserText.label: 'UI - CERTIFI'
+define service ZSD_DPS_CERTIFPROD {
+  expose ZC_DPS_CERTIFIWITHPRODUCT;
+  expose zc_dps_certifstprodct;
+}
