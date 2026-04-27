@@ -1,5 +1,5 @@
 @AbapCatalog.viewEnhancementCategory: [#NONE]
-@AccessControl.authorizationCheck:   #CHECK
+@AccessControl.authorizationCheck:   #NOT_REQUIRED
 @EndUserText.label: 'Composite Certificado com produto'
 @Metadata.ignorePropagatedAnnotations: true
 define root view entity ZI_DPS_CERTIFIWITHPRODUCT 

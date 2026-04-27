@@ -61,6 +61,12 @@ annotate entity ZC_DPS_CERTIFIWITHPRODUCT with
   @UI.hidden: true
   CertUuid;
 
+  @UI.hidden: true
+  LocalLastChangedAt;
+
+  @UI.hidden: true
+  Icon;
+
   @UI.selectionField: [{ position: 20 }]
   @UI.identification: [{ position: 20 }]
   @UI.lineItem: [{ position: 20 }]
@@ -75,26 +81,38 @@ annotate entity ZC_DPS_CERTIFIWITHPRODUCT with
 
 
   @UI.identification: [{ position: 30 }]
+  @UI.lineItem: [{ position: 40 }]
   @UI.fieldGroup:[{ qualifier: 'HeaderData' }]
   @EndUserText.label: 'Versão'
   Version;
 
+  @UI.selectionField: [{ position: 40 }]
+  @UI.lineItem: [{ position: 50 }]
+  @UI.identification: [{ position: 35 }]
+  @EndUserText.label: 'Status'
+  CertStatus;
+
+  @UI.lineItem: [{ position: 60 }]
   @UI.identification: [{ position: 40 }]
   @EndUserText.label: 'Certificado CE'
   CertCe;
 
+  @UI.lineItem: [{ position: 70 }]
   @UI.identification: [{ position: 50 }]
   @EndUserText.label: 'Certificado FCC'
   CertFcc;
 
+  @UI.lineItem: [{ position: 80 }]
   @UI.identification: [{ position: 60 }]
   @EndUserText.label: 'Certificado GS'
   CertGs;
 
+  @UI.lineItem: [{ position: 90 }]
   @UI.identification: [{ position: 70 }]
   @EndUserText.label: 'Certificado ISO'
   CertIso;
 
+  @UI.lineItem: [{ position: 100 }]
   @UI.identification: [{ position: 80 }]
   @EndUserText.label: 'Certificado TUEV'
   CertTuev;

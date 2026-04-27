@@ -7,6 +7,7 @@ define root view entity ZC_DPS_CERTIFIWITHPRODUCT
 {
 
   key CertUuid,
+      @Consumption.valueHelpDefinition: [{ entity: { name: 'ZI_DPS_PRODUCT', element: 'Matnr' } }]
       Matnr,
       description,
       Version,
